@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "421216793407",
+    "firebase_url": "https://auth-cordova.firebaseio.com",
+    "project_id": "auth-cordova",
+    "storage_bucket": "auth-cordova.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:421216793407:android:c29a8548257123dd98d98a",
+        "android_client_info": {
+          "package_name": "com.bhar4t.auth"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "421216793407-824ov1fg8vib03d2kmm4ad5lg57u8c61.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bhar4t.auth",
+            "certificate_hash": "8c52d66ab5aa72f71bcc343bd4f309e0ed2876d2"
+          }
+        },
+        {
+          "client_id": "421216793407-3brbm0dqj4lc9f4n405dci1k0slrppot.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDU2fUx_QfuWgLi9FnBVkldyStlX37ydTY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "421216793407-3brbm0dqj4lc9f4n405dci1k0slrppot.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

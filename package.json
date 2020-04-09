@@ -1,18 +1,24 @@
 {
   "name": "auth-cordova",
   "version": "0.1.0",
+  "homepage": "./",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "cordova-android": "^8.1.0",
+    "cordova-plugin-firebase-authentication": "^3.2.0",
+    "cordova-support-android-plugin": "^1.0.2",
+    "cordova-support-google-services": "^1.4.0",
+    "firebase": "^7.13.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1"
+    "react-scripts": "^3.4.1"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build && rm -rf www && mv build www && cordova build android && cordova run android",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -30,5 +36,16 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "cordova-plugin-whitelist": "1"
+  },
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-whitelist": {},
+      "cordova-plugin-firebase-authentication": {
+        "FIREBASE_AUTH_VERSION": "19.3.+"
+      }
+    }
   }
 }
