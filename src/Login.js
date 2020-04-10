@@ -3,7 +3,7 @@ import logo from "./logo.svg";
 import "./App.css";
 import { auth, firebase } from "./store";
 
-function App() {
+function Login() {
   const [phoneNumber, setPhoneNumber] = React.useState("");
   const [user, setUser] = React.useState(false);
   const [verificationId, setVerificationId] = React.useState(false);
@@ -23,7 +23,7 @@ function App() {
   const loginHandler = () => {
     window.cordova &&
       window.cordova.plugins.firebase.auth
-        .verifyPhoneNumber("+91" + phoneNumber, 30000)
+        .verifyPhoneNumber("+91" + phoneNumber, 0)
         .then((verificationId) => {
           setVerificationId(verificationId);
         });
@@ -50,7 +50,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <input
-          type="text"
+          type="number"
           name="phoneNumber"
           value={phoneNumber}
           onChange={(e) => {
@@ -64,7 +64,7 @@ function App() {
         {verificationId && (
           <>
             <input
-              type="text"
+              type="number"
               name="otp"
               placeholder={"888888"}
               onChange={(e) => {
@@ -88,4 +88,4 @@ function App() {
   );
 }
 
-export default App;
+export default Login;
