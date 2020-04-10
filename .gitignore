@@ -7,6 +7,9 @@
 /plugins
 /build
 /.pnp
+/.firebaserc
+/google-services.json
+/database.rules.json
 .pnp.js
 
 # testing
