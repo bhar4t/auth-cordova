@@ -11,7 +11,8 @@ Don’t worry we are not implementing all these kinds of stuff, Here we’re goi
 Before going to hand dirty on code, we have to create an Android project in [Firebase console](https://console.firebase.google.com/).
 
 Step I: First I have to register my new Android application **name** and **package name** in Firebase console. cause you won’t have an option for the Cordova application.
-[img]
+
+![](public/images/registerapp.png)
 
 You’ll see the third option while registering the app as **Debug signing certificate SHA-1**. It seems optional but because we’re creating authentication based application I’ll recommend you generate those certificates. [You can generate debug certificates by following it](https://developers.google.com/android/guides/client-auth) or by the following command default password is `android`
 
@@ -35,7 +36,8 @@ Certificate fingerprint: SHA1: DA:39:A3:EE:5E:6B:4B:0D:32:55:BF:EF:95:60:18:90:A
 Just copy the **SHA1** fingerprint and paste in the third input field **Debug signing certificate SHA-1**. after then click to **Register App.**
 
 Step II: The below screen will appear after click on the **Register App** button.
-[img]
+
+![](public/images/downloadserivcejson.png)
 
 Click on the **Download google-service.json,** you’ll have a JSON file, place it on the root of your project. and, remember you need to specify in `config.xml` for `google-service.json` so, Cordova will place the copied file inside _platforms/android/app_ directory while generating the app.
 
@@ -58,7 +60,7 @@ tep III: Now, you have to enable the Phone Authentication for your newly registe
 4.  Just **_Enable_** it from the right upper toggle button
 5.  **_Save_** it or if you don’t want to block from firebase while testing, you can add a random phone number and OTP for testing purposes then **_Save_** it.
 
-[img]
+![](public/images/develop_authentication_signinmethods_phone_enabled.png)
 
 We’ve finished the configuration in Firebase console, Now we’ve to look upon our local project.
 
