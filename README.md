@@ -158,10 +158,6 @@ auth
   });
 ```
 
-Login.js Full Code:
-
-<script src="https://gist.github.com/bhar4t/2f8f09b87dc6691cd7df48d2b0b11815.js"></script>
-
 Finished! If OTP and, verification_id verify successfully automatically your registered listener `onAuthStateChanged()` will be invoked.
 
 Thank You!
