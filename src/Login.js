@@ -1,9 +1,8 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
 import { auth, firebase } from "./store";
 
-function Login() {
+export default function Login() {
   const [phoneNumber, setPhoneNumber] = React.useState("");
   const [user, setUser] = React.useState(false);
   const [verificationId, setVerificationId] = React.useState(false);
@@ -48,7 +47,6 @@ function Login() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <input
           type="number"
           name="phoneNumber"
@@ -87,5 +85,3 @@ function Login() {
     </div>
   );
 }
-
-export default Login;
