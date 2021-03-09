@@ -169,4 +169,4 @@ References:
 3.  [https://cordova.apache.org/#getstarted](https://cordova.apache.org/#getstarted)
 4.  [https://reactjs.org/](https://reactjs.org/)
 
-[Read on Medium](https://medium.com/@BHAR4T/cordova-with-firebase-phone-authentication-without-captcha-6663427920d9)
+Read On [Medium](https://bhar4t.medium.com/cordova-with-firebase-phone-authentication-without-captcha-6663427920d9), or [Article](https://bhar4t.com/articles/Cordova-with-Firebase-Phone-Authentication-without-Captcha-and-reCaptcha)
